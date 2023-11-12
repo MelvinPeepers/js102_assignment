@@ -17,3 +17,28 @@ function sayGoodbye() {
 
 // Call the function with the callback
 greet("John", sayGoodbye);
+
+//* this
+
+//! The this keyword in JavaScript refers to the context in which a function is executed. Here's a very basic example to demonstrate the use of this:
+
+// Object with a method
+let myObject = {
+  value: 42,
+  // getValue is the method
+  getValue: function () {
+    // this referrs to the object itself
+    console.log(this.value);
+  },
+};
+
+// Calling the method using the object
+myObject.getValue(); // Logs: 42
+
+// Creating a standalone function that uses 'this'
+function standaloneFunction() {
+  console.log(this); // 'this' refers to the global object ('window' in a browser environment)
+}
+
+// Calling the standalone function
+standaloneFunction();
