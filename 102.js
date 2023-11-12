@@ -7,7 +7,6 @@
 function HelloWorld() {
   console.log("Hello World!");
 }
-
 //~ Calling the function
 HelloWorld();
 
@@ -20,7 +19,7 @@ function addTogether(a, b) {
 let answer = addTogether(5, 10);
 console.log(answer);
 
-//* Function Expression
+//* Function Expression (anonymous)
 let add = function (a, b) {
   return a + b;
 };
@@ -38,7 +37,7 @@ let dogAge = (number) => {
 let age = dogAge(10);
 console.log(age);
 
-//*Scopes
+//* Scopes
 
 //! In JavaScript, a scope defines the region of your code where a variable is visible and can be accessed. Scopes help manage the lifetime and accessibility of variables.
 
