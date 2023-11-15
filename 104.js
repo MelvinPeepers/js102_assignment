@@ -22,23 +22,44 @@ greet("John", sayGoodbye);
 
 //! The this keyword in JavaScript refers to the context in which a function is executed. Here's a very basic example to demonstrate the use of this:
 
-// Object with a method
-let myObject = {
-  value: 42,
-  // getValue is the method
-  getValue: function () {
-    // this referrs to the object itself
-    console.log(this.value);
+// Create an object called 'dog'
+var dog = {
+  breed: "Labrador Retriever",
+  size: "medium",
+  start: function () {
+    console.log(
+      "A " +
+        this.breed +
+        " which is a " +
+        this.size +
+        " size dog, is the perfect for my apartment."
+    );
   },
 };
 
-// Calling the method using the object
-myObject.getValue(); // Logs: 42
+// Call the 'start' method of the 'dog' object
+dog.start();
 
-// Creating a standalone function that uses 'this'
-function standaloneFunction() {
-  console.log(this); // 'this' refers to the global object ('window' in a browser environment)
+//* Arguments
+
+//! The arguments keyword refers to an array-like object available within all functions. It holds all the parameters passed to the function, regardless
+//! of the number of parameters defined in the function's signature.
+
+// Define a function that takes two parameters
+function displayArguments(arg1, arg2) {
+  // The 'arguments' keyword holds all passed arguments
+  console.log(arguments);
+
+  // Access individual arguments using array-like indexing
+  console.log("First argument:", arguments[0]);
+  console.log("Second argument:", arguments[1]);
 }
 
-// Calling the standalone function
-standaloneFunction();
+// Call the function with different arguments
+displayArguments("dog", "cat");
+displayArguments(1, true, "moose");
+
+//* New
+
+//! The new keyword is used to create instances of objects. It is typically followed by a constructor function, which is a special function that initializes
+//! and sets up the properties of an object.
