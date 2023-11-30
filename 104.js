@@ -61,5 +61,4 @@ displayArguments(1, true, "moose");
 
 //* New
 
-//! The new keyword is used to create instances of objects. It is typically followed by a constructor function, which is a special function that initializes
-//! and sets up the properties of an object.
+//! The new keyword is used to create instances of a class or function.
