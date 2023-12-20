@@ -23,7 +23,7 @@ greet("John", sayGoodbye);
 //! The this keyword in JavaScript refers to the context in which a function is executed. Here's a very basic example to demonstrate the use of this:
 
 // Create an object called 'dog'
-var dog = {
+const dog = {
   breed: "Labrador Retriever",
   size: "medium",
   start: function () {
