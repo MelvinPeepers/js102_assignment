@@ -34,6 +34,11 @@ const dog = {
 // Call the 'start' method of the 'dog' object
 dog.start();
 
+const anotherDog = {
+  breed: "Chow Chow",
+  size: "small",
+};
+
 //* Arguments
 
 //! The arguments keyword refers to an array-like object available within all functions. It holds all the parameters passed to the function, regardless
