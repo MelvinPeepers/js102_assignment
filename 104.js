@@ -27,13 +27,7 @@ const dog = {
   breed: "Labrador Retriever",
   size: "medium",
   start: function () {
-    console.log(
-      "A " +
-        this.breed +
-        " which is a " +
-        this.size +
-        " size dog, is the perfect for my apartment."
-    );
+    return `A ${this.breed} which is a ${this.size} size dog, is the perfect for my apartment`;
   },
 };
 
